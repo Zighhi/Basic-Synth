@@ -71,6 +71,7 @@ void AdsrComponent::setSliderWithLabel(juce::Slider& slider, juce::Label& label,
 {
     slider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
     slider.setTextBoxStyle(juce::Slider::TextBoxBelow, true, 40, 20);
+    slider.setColour(juce::Slider::textBoxOutlineColourId, juce::Colours::white);
     addAndMakeVisible(slider);
 
     attachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(apvts, paramId, slider);

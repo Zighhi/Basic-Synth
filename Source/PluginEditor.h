@@ -10,6 +10,8 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "UI/AdsrComponent.h"
+#include "UI/OscComponent.h"
 
 //==============================================================================
 /**
@@ -28,6 +30,8 @@ private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     BasicSynthAudioProcessor& audioProcessor;
+    OscComponent osc;
+    AdsrComponent adsr;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (BasicSynthAudioProcessorEditor)
 };

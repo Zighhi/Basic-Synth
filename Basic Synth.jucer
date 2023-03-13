@@ -12,6 +12,23 @@
       <FILE id="T6iLm8" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
       <FILE id="bzhDaT" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="Vsy4YW" name="SynthVoice.cpp" compile="1" resource="0" file="Source/SynthVoice.cpp"/>
+      <FILE id="hXgJcW" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+      <FILE id="dV7SGm" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+      <GROUP id="{2035DF04-7B81-33EA-7324-14042E508F6A}" name="Data">
+        <FILE id="NrE3PR" name="AdsrData.cpp" compile="1" resource="0" file="Source/Data/AdsrData.cpp"/>
+        <FILE id="e6R1xn" name="AdsrData.h" compile="0" resource="0" file="Source/Data/AdsrData.h"/>
+        <FILE id="rlmDe6" name="OscData.cpp" compile="1" resource="0" file="Source/Data/OscData.cpp"/>
+        <FILE id="FyL4gW" name="OscData.h" compile="0" resource="0" file="Source/Data/OscData.h"/>
+      </GROUP>
+      <GROUP id="{9247D9D4-A938-BCF9-27DF-8782EA6D0195}" name="UI">
+        <FILE id="MoaKBM" name="AdsrComponent.cpp" compile="1" resource="0"
+              file="Source/UI/AdsrComponent.cpp"/>
+        <FILE id="BIOtAQ" name="AdsrComponent.h" compile="0" resource="0" file="Source/UI/AdsrComponent.h"/>
+        <FILE id="Juks2i" name="OscComponent.cpp" compile="1" resource="0"
+              file="Source/UI/OscComponent.cpp"/>
+        <FILE id="YjDVmn" name="OscComponent.h" compile="0" resource="0" file="Source/UI/OscComponent.h"/>
+      </GROUP>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>

@@ -11,11 +11,17 @@
 
 //==============================================================================
 BasicSynthAudioProcessorEditor::BasicSynthAudioProcessorEditor (BasicSynthAudioProcessor& p)
-    : AudioProcessorEditor (&p), audioProcessor (p)
+    : AudioProcessorEditor (&p)
+    , audioProcessor (p)
+    , osc(audioProcessor.apvts, "OSCWAVETYPE")
+    , adsr("Envelope", audioProcessor.apvts, "ATTACK", "DECAY", "SUSTAIN", "RELEASE")
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    setSize(430, 150);
+    addAndMakeVisible(osc);
+    addAndMakeVisible(adsr);
+  
 }
 
 BasicSynthAudioProcessorEditor::~BasicSynthAudioProcessorEditor()
@@ -25,16 +31,12 @@ BasicSynthAudioProcessorEditor::~BasicSynthAudioProcessorEditor()
 //==============================================================================
 void BasicSynthAudioProcessorEditor::paint (juce::Graphics& g)
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
-
-    g.setColour (juce::Colours::white);
-    g.setFont (15.0f);
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
+    g.fillAll(juce::Colours::cadetblue);
 }
 
 void BasicSynthAudioProcessorEditor::resized()
-{
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+{   
+ 
+    osc.setBounds(10, 10, 200, 200);
+    adsr.setBounds(130, 10, 300, 200);
 }

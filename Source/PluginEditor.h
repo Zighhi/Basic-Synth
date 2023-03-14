@@ -27,6 +27,7 @@ public:
     void resized() override;
 
 private:
+
     BasicSynthAudioProcessor& audioProcessor;
     OscComponent osc;
     AdsrComponent adsr;

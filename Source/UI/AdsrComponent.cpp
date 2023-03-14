@@ -69,6 +69,7 @@ using Attachment = juce::AudioProcessorValueTreeState::SliderAttachment;
 
 void AdsrComponent::setSliderWithLabel(juce::Slider& slider, juce::Label& label, juce::AudioProcessorValueTreeState& apvts, juce::String paramId, std::unique_ptr<Attachment>& attachment)
 {
+
     slider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
     slider.setTextBoxStyle(juce::Slider::TextBoxBelow, true, 40, 20);
     slider.setColour(juce::Slider::textBoxOutlineColourId, juce::Colours::white);
@@ -80,4 +81,5 @@ void AdsrComponent::setSliderWithLabel(juce::Slider& slider, juce::Label& label,
     label.setFont(15.0f);
     label.setJustificationType(juce::Justification::centred);
     addAndMakeVisible(label);
+
 }

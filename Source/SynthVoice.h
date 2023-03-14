@@ -36,4 +36,5 @@ private:
     juce::dsp::Gain<float> gain;
 
     bool isPrepared{ false };
+
 };

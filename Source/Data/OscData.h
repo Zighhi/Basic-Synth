@@ -23,5 +23,6 @@ public:
 private:
     
     int lastMidiNote{ 0 };
+
 };
 

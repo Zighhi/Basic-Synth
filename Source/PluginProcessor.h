@@ -63,6 +63,7 @@ public:
     juce::AudioProcessorValueTreeState apvts{ *this, nullptr, "Parameters", createParams() };
 
 private:
+
     juce::Synthesiser synth;
    
     //==============================================================================

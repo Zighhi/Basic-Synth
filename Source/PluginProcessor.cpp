@@ -197,6 +197,7 @@ juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 
 juce::AudioProcessorValueTreeState::ParameterLayout BasicSynthAudioProcessor::createParams()
 {
+
     juce::AudioProcessorValueTreeState::ParameterLayout params;
 
     params.add(std::make_unique<juce::AudioParameterChoice>("OSCWAVETYPE", "Osc Wave Type", juce::StringArray{ "Sine", "Saw", "Square","Triangle" }, 0));
@@ -207,4 +208,5 @@ juce::AudioProcessorValueTreeState::ParameterLayout BasicSynthAudioProcessor::cr
     params.add(std::make_unique<juce::AudioParameterFloat>("RELEASE", "Release", juce::NormalisableRange<float> { 0.1f, 2.5f, 0.1f }, 0.4f));
 
     return params;
+
 }

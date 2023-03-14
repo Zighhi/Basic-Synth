@@ -81,6 +81,7 @@ void SynthVoice::renderNextBlock(juce::AudioBuffer< float >& outputBuffer, int s
             clearCurrentNote();
      
     }
+
 }
 
 

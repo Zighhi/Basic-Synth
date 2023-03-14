@@ -18,6 +18,7 @@
 class OscComponent  : public juce::Component
 {
 public:
+
     OscComponent(juce::AudioProcessorValueTreeState& apvts, juce::String waveSelectorId);
     ~OscComponent() override;
 
@@ -37,4 +38,5 @@ private:
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (OscComponent)
+
 };

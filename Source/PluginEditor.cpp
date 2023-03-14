@@ -39,4 +39,5 @@ void BasicSynthAudioProcessorEditor::resized()
  
     osc.setBounds(10, 10, 200, 200);
     adsr.setBounds(130, 10, 300, 200);
+
 }
